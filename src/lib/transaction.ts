@@ -99,6 +99,7 @@ export async function createTransaction<
             throw new Error('No Ethereum object found in window');
           }
         } catch (error) {
+          console.error(error);
           console.error('Posting with Bundlr failed, posting with Arweave');
           // create transaction
           const transaction = await arweave.createTransaction({
