@@ -17,7 +17,8 @@
     "build": "rimraf ./dist && yarn tsc",
     "test": "jest --config jestconfig.json",
     "lint": "tslint -p tsconfig.json",
-    "format": "prettier --write src/*.ts"
+    "format": "prettier --write src/*.ts",
+    "prepare": "yarn tsc"
   },
   "repository": {
     "type": "git",
